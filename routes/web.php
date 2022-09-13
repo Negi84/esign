@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,9 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/callback', function(){
-
+Route::get('/callback', function(Request $request){
+    dd($request);
 });
-Route::get('/response', function(){
-
+Route::get('/response', function(Request $request){
+    dd($request);
 });
